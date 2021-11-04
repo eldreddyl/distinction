@@ -14,3 +14,11 @@ Date
 - Current tasks:
 - Goals: 
 - Reflection: 
+
+
+
+Thursday, November 4
+- Hours worked today: 2 
+- Current tasks: Finding available data, browsing current literature
+- Goals: Find a compatible data set that includes healt insurance types and utilization by state
+- Reflection: Today I found a promising data set from the BRFSS. It consisted of a questionnaire that covered state of residence, health insurance coverage type and status, and utilization of different services. I also created this GitHub repository as a way to organize my files and to document my progress on this progress. For next week, I am going to review current literature to try and devise a method for regression.
