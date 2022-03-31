@@ -11,6 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Date 3/29/2022
 - Hours worked today: 2
+- Current tasks: generate summary statistics for workers (complete), continue literature review, construct DDD model, regression
+- Deadlines: 
+    - Hard: Poster (4/28/22), Paper (5/1/22)
+    - Soft:  Literature Review (4/5/22)
+- Reflection: Today I finished calculating the summary statistics for age, income, union membership, % working in a risky occupation. When I ran my initial regression including the entire sample. I did get results similar to Simon's paper. Instead of coverage rates decreasing, they increased. For next time, I'm going to look into the interaction term variables. I need to include small group with the policy variables (rpost1, rpost2, rpost3). Then after I run the probit model, I need to calculate the marginal effects.
+
+
+
+
+Date 3/29/2022
+- Hours worked today: 2
 - Current tasks: generate summary statistics for workers, continue literature review, construct DDD model
 - Deadlines: 
     - Hard: Poster (4/28/22), Paper (5/1/22)
