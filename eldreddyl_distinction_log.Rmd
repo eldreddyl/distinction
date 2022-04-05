@@ -8,8 +8,18 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Date 4/5/2022
+- Hours worked today: 2
+- Current tasks: Simon replication, literature review
+- Deadlines: 
+    - Hard: Poster (4/28/22), Paper (5/1/22)
+    - Soft:  Literature Review (4/5/22)
+- Reflection: I still wasn't getting coefficients on my interaction terms to match the Simon results. I believe this may be due to me coding the timing of the reforms incorrectly. I took table 1 from Simon (2005) and stored the timing in an Excel spreadsheet. Currently, I am in the process of importing the spreadsheet into python so that I can output Stata code that will correctly time the reforms
 
-Date 3/29/2022
+
+
+
+Date 3/31/2022
 - Hours worked today: 2
 - Current tasks: generate summary statistics for workers (complete), continue literature review, construct DDD model, regression
 - Deadlines: 
