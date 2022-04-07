@@ -8,6 +8,17 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+Date 4/7/2022
+- Hours worked today: 2
+- Current tasks: Simon replication, literature review
+- Deadlines: 
+    - Hard: Poster (4/28/22), Paper (5/1/22)
+    - Soft:  Literature Review (4/5/22)
+- Reflection: I went back through and recoded the different levels of reform, and finally got results similar to Simon. When I restricted the sample to my treatment group (workers in risky occupations), reform was associated with an (albeit small) increase in coverage. I'm going to continue to work on my regressions with the next step trying to estimate the change (if any) in wages for those workers.
+
+
+
 Date 4/5/2022
 - Hours worked today: 2
 - Current tasks: Simon replication, literature review
