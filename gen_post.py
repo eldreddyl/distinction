@@ -5,21 +5,13 @@
 # - Timing of Reforms comes from Simon (2005)
 # - Data is stored in an Excel spreadsheet titled "reform_timing"
 
-# In[1]:
-
-
 import pandas as pd
 from ipywidgets import interact
 import numpy as np
 
 
-# In[2]:
-
 
 get_ipython().system('pip install openpyxl')
-
-
-# In[3]:
 
 
 #Reading in Excel sheet into a pandas dataframe
@@ -27,9 +19,8 @@ reform_timing = pd.read_excel('reform_timing.xlsx')
 reform_timing = reform_timing.fillna(0) #filling missing values with 0 for easier manipulation
 
 
-# In[4]:
-
-
+#'states' is a dictionary that matches state abbreviations (NY, CA, TX, etc.) to its designated state code in the CPS
+# Each state abbreviation is its own key
 states = {
     'AK': 2,
     'AL': 1,
@@ -85,10 +76,9 @@ states = {
 }
 
 
-# In[6]:
-
 
 #Converting values from float to int
+#May be a better way to do this with looping over specific columns, but for now I just did it manually
 reform_timing = reform_timing.astype({'f_start': 'int'})
 reform_timing = reform_timing.astype({'f_end': 'int'})
 reform_timing = reform_timing.astype({'p_start': 'int'})
@@ -96,8 +86,6 @@ reform_timing = reform_timing.astype({'p_end': 'int'})
 reform_timing = reform_timing.astype({'bb_start': 'int'})
 reform_timing = reform_timing.astype({'bb_end': 'int'})
 
-
-# In[16]:
 
 
 #Looping thorugh rows to generate a list of state code values
@@ -109,13 +97,11 @@ for row in reform_timing.to_records():
     code_list.append(state_code)
 
 
-# In[17]:
 
 
 reform_timing['State_codes'] = code_list #Create a new dataframe column that matches the state abbreviation with its associated state code
 
 
-# In[18]:
 
 
 reform_timing
@@ -123,7 +109,6 @@ reform_timing
 
 # # Post 1: Full Reform
 
-# In[26]:
 
 
 #Code to generate Stata code for full reform variable
@@ -134,8 +119,6 @@ for row in reform_timing.to_records(): #Loop through each row of the dataframe
 
 # # Post 2: Partial Reform
 
-# In[21]:
-
 
 #Partial reform. Same logic as full reform loop
 for row in reform_timing.to_records():
@@ -145,7 +128,7 @@ for row in reform_timing.to_records():
 
 # # Post 3: Barebones Reform
 
-# In[22]:
+
 
 
 #Barebones reform. Same logic as other reforms
