@@ -8,6 +8,16 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Date 4/19/2022
+- Hours worked today: 2
+- Current tasks: Simon replication, literature review
+- Deadlines: 
+    - Hard: Poster (4/28/22), Paper (5/1/22)
+    - Soft: Wage, LS analysis
+- Reflection: I've made really good progress on the poster. I basically have everything I need except for the results, which I'm working on now. I have the probit outputs for the Simon replication and the effect on coverage for the risky workers. Currently, I'm trying to learn how to convert probit coefficients to marginal effects. From my risk_occ regression, I did find that coverage did increase in full reform states which is what I expected. Next, I need to analyze how that might effect the wages and weekly hours worked for those workers. I uploaded the Simon replication output and the summary statistics of my sample as well. Those can be found, along with my other files, in the main page of this repo.
+
+
+
 
 Date 4/7/2022
 - Hours worked today: 2
