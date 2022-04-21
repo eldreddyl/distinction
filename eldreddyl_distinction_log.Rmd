@@ -8,6 +8,15 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Date 4/20/2022
+- Hours worked today: 3
+- Current tasks: Simon replication, literature review, paper tidy up
+- Deadlines: 
+    - Hard: Poster (4/28/22), Paper (5/1/22)
+    - Soft: Wage, LS analysis
+- Reflection: Today I focused on getting the paper squared away. I'm forcing myself to learn LaTeX, so progres is slow for now. I already had chunks written out in word previously. I have the literature review, theoretical background, data, and methods section done. I had an introduction for my thesis proposal, but my project's topic has shifted since I wrote it originally, so I'm going to go back and rewrite it. 
+
+
 Date 4/19/2022
 - Hours worked today: 2
 - Current tasks: Simon replication, literature review
