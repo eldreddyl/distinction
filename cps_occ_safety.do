@@ -975,7 +975,7 @@ summarize age if rpost3 == 1
 
 
 ***Union
-*gen union_cov = (union == 2) | (union == 3)
+gen union_cov = (union == 2) | (union == 3)
 *Includes workers who are union members or covered by a union, despite not being members themselves
 
 **Barebones
