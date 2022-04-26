@@ -1,6 +1,8 @@
 * NOTE: You need to set the Stata working directory to the path
 * where the data file is located.
 
+***Start of CPS IPums Label Code***
+
 set more off
 
 clear
@@ -772,7 +774,7 @@ label define union_lbl 2 `"Member of labor union"', add
 label define union_lbl 3 `"Covered by union but not a member"', add
 label values union union_lbl
 
-
+***End of CPS IPums Label Code***
 
 *Drop people who are unemployed or self-employed
 drop if occ90ly == 999
@@ -1080,9 +1082,36 @@ xi: probit inc_health rpost1 rpost2 rpost3  small_firm union age age2 married ln
 xi: probit inc_health rpost1 rpost2 rpost3  small_firm  union age lnwage married i.statefip i.year if risk_occ == 1
 
 
+*Summary stats: different percentiles
+
+*Included in their Employers Group Health Insurance plan during the previous year
+summarize inchealth if (f_rate0 = 1)
+summarize inchealth if (f_rate25 = 1)
+summarize inchealth if (f_rate50 = 1)
+summarize inchealth if (f_rate75 = 1)
+summarize inchealth if (f_rate95 = 1)
+
+*Union Membership
+summarize union_cov if (f_rate0 = 1)
+summarize union_cov if (f_rate25 = 1)
+summarize union_cov if (f_rate50 = 1)
+summarize union_cov if (f_rate75 = 1)
+summarize union_cov if (f_rate95 = 1)
+
+*Income
+summarize incwage if (f_rate0 = 1)
+summarize incwage if (f_rate25 = 1)
+summarize incwage if (f_rate50 = 1)
+summarize incwage if (f_rate75 = 1)
+summarize incwage if (f_rate95 = 1)
 
 
-
+*Age
+summarize age if (f_rate0 = 1)
+summarize age if (f_rate25 = 1)
+summarize age if (f_rate50 = 1)
+summarize age if (f_rate75 = 1)
+summarize age if (f_rate95 = 1)
 
 
 
